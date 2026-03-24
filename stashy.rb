@@ -5,21 +5,21 @@
 class Stashy < Formula
   desc "Self-hosted file storage service"
   homepage "https://github.com/stashysh/stashy"
-  version "0.2.2"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stashysh/stashy/releases/download/v0.2.2/stashy_0.2.2_darwin_amd64.tar.gz"
-      sha256 "750ac8a0ca339181e4ea0095d992bf0bd1abcce58920ebece1eb55d967bcefaa"
+      url "https://github.com/stashysh/stashy/releases/download/v0.3.0/stashy_0.3.0_darwin_amd64.tar.gz"
+      sha256 "7920e712a54383d0d0c8d0ef183a6096cc1ceaaf7dcf655f7560de0e73533a54"
 
       define_method(:install) do
         bin.install "stashy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stashysh/stashy/releases/download/v0.2.2/stashy_0.2.2_darwin_arm64.tar.gz"
-      sha256 "6b925a141ed2fe4d53f3dbb30200c543d25ad6dea27620166227a3a57a791c77"
+      url "https://github.com/stashysh/stashy/releases/download/v0.3.0/stashy_0.3.0_darwin_arm64.tar.gz"
+      sha256 "5c87fccac5969788c375ac8d802546868f0376d49d927e9a7760c2e2487daef8"
 
       define_method(:install) do
         bin.install "stashy"
@@ -29,15 +29,15 @@ class Stashy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stashysh/stashy/releases/download/v0.2.2/stashy_0.2.2_linux_amd64.tar.gz"
-      sha256 "32342d9c65f89d61d100e13d32a8d9d42f92324c21b3f48678cafd7dcbfcb3c4"
+      url "https://github.com/stashysh/stashy/releases/download/v0.3.0/stashy_0.3.0_linux_amd64.tar.gz"
+      sha256 "3a922fca7188b74c43b0c45a3e09ba1b3dc8584dd3c5759e7a97c62a95cd9c50"
       define_method(:install) do
         bin.install "stashy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stashysh/stashy/releases/download/v0.2.2/stashy_0.2.2_linux_arm64.tar.gz"
-      sha256 "24ade8a635cfc0251e99c357f38715d86210794d4232c87f517fdc38577ea6c2"
+      url "https://github.com/stashysh/stashy/releases/download/v0.3.0/stashy_0.3.0_linux_arm64.tar.gz"
+      sha256 "dcd28a5c4df2560de845691c31a4312e79390cdf84013dbab9931bb85aa705f8"
       define_method(:install) do
         bin.install "stashy"
       end
